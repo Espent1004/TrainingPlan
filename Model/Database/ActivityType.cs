@@ -10,6 +10,6 @@ namespace Model.Database
     {
         public int ActivtyTypeId { get; set; }
         public String ActivityTypeText { get; set; }
-
+        public List<Activity> Activities { get; set; }
     }
 }

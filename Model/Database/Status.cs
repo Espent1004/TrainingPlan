@@ -11,5 +11,6 @@ namespace Model.Database
         public int StatusId { get; set; }
 
         public String StatusText { get; set; }
+        public List<Activity> Activities { get; set; }
     }
 }

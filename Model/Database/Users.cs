@@ -15,5 +15,6 @@ namespace Model.Database
         public String Phone { get; set; }
         public byte[] Password { get; set;}
         public byte[] Salt { get; set; }
+        public List<Activity> Activities { get; set; }
     }
 }

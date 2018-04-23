@@ -17,5 +17,8 @@ namespace Model.Database
         public virtual Status Status { get; set; }
         public String Description { get; set; }
         public DateTime Date { get; set; }
+        public List<Comment> Comments { get; set; }
+
+
     }
 }
