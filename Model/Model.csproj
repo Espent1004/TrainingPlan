@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Database\Activity.cs" />
     <Compile Include="Database\ActivityType.cs" />
     <Compile Include="Database\Comment.cs" />
     <Compile Include="Database\Status.cs" />
