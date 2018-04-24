@@ -5,7 +5,6 @@ namespace DAL
 {
     public interface IUnitOfWork
     {
-        #region Properties
         GenericRepository<Model.Database.Activity, Model.Domain.Activity> ActivityRepository { get; }
         GenericRepository<Model.Database.ActivityType, Model.Domain.ActivityType> ActivityTypeRepository { get; }
         GenericRepository<Model.Database.Comment, Model.Domain.Comment> CommentRepository { get; }
@@ -14,7 +13,6 @@ namespace DAL
 
 
 
-        #region Public methods
         /// <summary>
         /// Save method.
         /// </summary>
@@ -22,8 +20,6 @@ namespace DAL
 
 
         void Dispose();
-
-        #endregion
 
     }
 }
