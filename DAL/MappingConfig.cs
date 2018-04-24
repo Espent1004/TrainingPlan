@@ -24,16 +24,12 @@ namespace DAL.Mapping
 
                 config.CreateMap<Model.Database.Users, Model.Domain.Users>()
                 .ForMember(
-                    dest => dest.Password, 
+                    dest => dest.Password,
                     opt => opt.Ignore())
-                .ReverseMap().
-                ForMember(
-                    dest => dest.Password, 
-                    opt => opt.Ignore())
-                .ForMember(
-                    dest => dest.Salt, 
-                    opt => opt.Ignore()
-                    );
+                    .ForMember(
+                    dest => dest.PasswordByte,
+                    opt => opt.MapFrom
+                    (src => src.Password));
 
                 config.CreateMap<Model.Database.Status, Model.Domain.Status>();
 

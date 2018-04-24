@@ -10,6 +10,7 @@ using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Model.Database;
 
 namespace DAL
 {
@@ -21,19 +22,12 @@ namespace DAL
 
         }
 
-        //public DbSet<AirplaneModels> AirplaneModels { get; set; }
-        //public DbSet<Airplanes> Airplanes { get; set; }
-        //public DbSet<Airports> Airports { get; set; }
-        //public DbSet<Flights> Flights { get; set; }
-        //public DbSet<Orders> Orders { get; set; }
-        //public DbSet<Contacts> Contacts { get; set; }
-        //public DbSet<Tickets> Tickets { get; set; }
-        //public DbSet<Travellers> Travellers { get; set; }
-        //public DbSet<Cards> Cards { get; set; }
-        //public DbSet<Payments> Payments { get; set; }
-        //public DbSet<DBStatus> Status { get; set; }
-        //public DbSet<ChangeLogs> ChangeLogs { get; set; }
-        //public DbSet<Users> Users { get; set; }
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Status> Status { get; set; }
+        public DbSet<Activity> Activity { get; set; }
+        public DbSet<ActivityType> ActivityType { get; set; }
+        public DbSet<Comment> Comment { get; set; }
+
 
 
 

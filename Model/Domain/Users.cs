@@ -15,5 +15,7 @@ namespace Model.Domain
         public String Phone { get; set; }
         public String Password { get; set;}
         public List<Activity> Activities { get; set; }
+        public byte[] PasswordByte { get; set; }
+        public byte[] Salt { get; set; }
     }
 }
